@@ -4,11 +4,13 @@ def read_file(file_name):
         file_name
         target_file = open(file_name)
         content = target_file.read()
-        target_file.close()
-        print(content)
+        target_file.close()        
 
     except OSError:
         print('Hiba a fájl kezelése közben!')
+
+    else:
+        print(content)
 
 
 #file nam asker function to ask for file name and return it:
